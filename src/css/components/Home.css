@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 75px);
+    color: #fff;
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  main #left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  main #left h1#name {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    margin: 25px 0 0 0;
+    color: #b5b35d;
+  }
+  main #left h2#position {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color: #acbf61;
+  }
+  main #left p#bio {
+    margin-top: 50px;
+    font-family: monospace;
+    font-size: 1.6em;
+  }
+  main #left .button {
+    margin-top: 25px;
+  }
+  main #right {
+    margin-left: 100px;
+    z-index: 1;
+  }
+  main #social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    top: calc(50% - 120px);
+    right: 0;
+  }
+  main .socialIcon {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+  }
+  main .socialIcon span {
+    text-align: right;
+    overflow: hidden;
+    width: 0;
+    padding-right: 0;
+    transition: 1s;
+    font-size: 0.7em;
+  }
+  main .socialIcon svg {
+    fill: white;
+    width: 35px;
+    height: 35px;
+    padding: 10px 0px 10px 10px;
+    transition: 0.3s;
+    transition: width 2s;
+  }
+  main .socialIcon:hover span {
+    width: 100px;
+    padding-right: 10px;
+    transition: 1s;
+  }
+  main .socialIcon:hover svg {
+    padding: 10px 10px 10px 0px;
+    transition: 0.3s;
+  }
+
+  /* Typing Animation */
+
+  .blink {
+    animation: blink 0.7s infinite;
+  }
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+  main #left .wrapper {
+    display: flex;
+  }
+  main #left .typing {
+    color: #fff;
+    font-family: "Courier";
+    font-size: 1.5em;
+    padding: 0.1em;
+  }
+
+  /* Animated Background Shapes */
+
+  #circle {
+    fill: rgba(70, 70, 70, 0.1);
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    animation: circlePath 60s infinite;
+    z-index: -1;
+  }
+  #circle2 {
+    fill: rgba(70, 70, 70, 0.1);
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    animation: circlePath2 60s infinite;
+    z-index: -1;
+  }
+  #circle3 {
+    fill: rgba(70, 70, 70, 0.1);
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    animation: circlePath3 60s infinite;
+    z-index: -1;
+  }
+
+  @keyframes circlePath {
+    0% {
+      top: -100px;
+      left: -100px;
+    }
+    10% {
+      top: 300px;
+      left: 400px;
+    }
+    20% {
+      top: 900px;
+      left: 800px;
+    }
+    30% {
+      top: 50px;
+      left: 50px;
+    }
+    40% {
+      top: 10px;
+      left: 800px;
+    }
+    50% {
+      top: 500px;
+      left: 500px;
+    }
+    60% {
+      top: 500px;
+      left: 500px;
+    }
+    70% {
+      top: 10px;
+      left: 2000px;
+    }
+    80% {
+      top: 1100px;
+      left: 20px;
+    }
+    90% {
+      top: 1100px;
+      left: 2000px;
+    }
+    100% {
+      top: 100px;
+      left: 1900px;
+    }
+  }
+
+  @keyframes circlePath2 {
+    0% {
+      top: 100px;
+      left: 1900px;
+    }
+    10% {
+      top: 300px;
+      left: 400px;
+    }
+    20% {
+      top: 100px;
+      left: 800px;
+    }
+    30% {
+      top: 100px;
+      left: 500px;
+    }
+    40% {
+      top: 10px;
+      left: 800px;
+    }
+    50% {
+      top: 500px;
+      left: 500px;
+    }
+    60% {
+      top: 90px;
+      left: 250px;
+    }
+    70% {
+      top: 10px;
+      left: 2000px;
+    }
+    80% {
+      top: 1100px;
+      left: 20px;
+    }
+    90% {
+      top: 800px;
+      left: 800px;
+    }
+    100% {
+      top: -1100px;
+      left: 2000px;
+    }
+  }
+
+  @keyframes circlePath3 {
+    0% {
+      top: 100px;
+      left: 1900px;
+    }
+    10% {
+      top: -300px;
+      left: 900px;
+    }
+    20% {
+      top: 100px;
+      left: 800px;
+    }
+    30% {
+      top: 50px;
+      left: 50px;
+    }
+    40% {
+      top: 10px;
+      left: 800px;
+    }
+    50% {
+      top: 500px;
+      left: 500px;
+    }
+    60% {
+      top: 90px;
+      left: 250px;
+    }
+    70% {
+      top: 10px;
+      left: 20px;
+    }
+    80% {
+      top: 1100px;
+      left: 20px;
+    }
+    90% {
+      top: 800px;
+      left: 800px;
+    }
+    100% {
+      top: -100px;
+      left: -100px;
+    }
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: #fff;
+    z-index: -2;
+    overflow-x: hidden;
+    padding-top: 50px;
+  }
+
+  main #left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    flex-grow: 1;
+  }
+  main #left h1#name {
+    text-align: center;
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 25px 0 0 0;
+    color: #b5b35d;
+  }
+  main #left h2#position {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+    color: #acbf61;
+  }
+  main #left .wrapper {
+    display: flex;
+  }
+  main #left .typing {
+    color: #fff;
+    font-family: "Courier";
+    font-size: 1.25em;
+    padding: 0.1em;
+  }
+
+  main #left .button {
+    margin-top: 25px;
+  }
+  main #right {
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+  }
+  main #social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 25px 0;
+  }
+  main .socialIcon svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+  }
+
+  main .socialIcon span {
+    display: none;
+  }
+  /* Typing Animation */
+
+  .blink {
+    animation: blink 0.7s infinite;
+  }
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+
+  /* Animated Background Shapes */
+
+  #circle {
+    fill: rgba(70, 70, 70, 0.3);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    animation: circlePath 60s infinite;
+    z-index: -1;
+  }
+  #circle2 {
+    fill: rgba(70, 70, 70, 0.3);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    animation: circlePath2 60s infinite;
+    z-index: -1;
+  }
+  #circle3 {
+    fill: rgba(70, 70, 70, 0.3);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    animation: circlePath3 60s infinite;
+    z-index: -1;
+  }
+
+  @keyframes circlePath {
+    0% {
+      top: -10px;
+      left: -10px;
+    }
+    10% {
+      top: 50px;
+      left: 175px;
+    }
+    20% {
+      top: 200px;
+      left: 10px;
+    }
+    30% {
+      top: 50px;
+      left: 50px;
+    }
+    40% {
+      top: 10px;
+      left: 800px;
+    }
+    50% {
+      top: 50px;
+      left: 50px;
+    }
+    60% {
+      top: 50px;
+      left: 50px;
+    }
+    70% {
+      top: 10px;
+      left: 200px;
+    }
+    80% {
+      top: 110px;
+      left: 20px;
+    }
+    90% {
+      top: 110px;
+      left: 200px;
+    }
+    100% {
+      top: 100px;
+      left: 190px;
+    }
+  }
+
+  @keyframes circlePath2 {
+    0% {
+      top: 10px;
+      left: 900px;
+    }
+    10% {
+      top: 50px;
+      left: 175px;
+    }
+    20% {
+      top: 200px;
+      left: 350px;
+    }
+    30% {
+      top: 10px;
+      left: 50px;
+    }
+    40% {
+      top: 10px;
+      left: 80px;
+    }
+    50% {
+      top: 50px;
+      left: 50px;
+    }
+    60% {
+      top: 90px;
+      left: 25px;
+    }
+    70% {
+      top: 10px;
+      left: 20px;
+    }
+    80% {
+      top: 11px;
+      left: 20px;
+    }
+    90% {
+      top: 80px;
+      left: 80px;
+    }
+    100% {
+      top: -110px;
+      left: 200px;
+    }
+  }
+
+  @keyframes circlePath3 {
+    0% {
+      top: 1000px;
+      left: 350px;
+    }
+    10% {
+      top: 50px;
+      left: 175px;
+    }
+    20% {
+      top: 20px;
+      left: 200px;
+    }
+    30% {
+      top: 50px;
+      left: 50px;
+    }
+    40% {
+      top: 10px;
+      left: 80px;
+    }
+    50% {
+      top: 50px;
+      left: 50px;
+    }
+    60% {
+      top: 90px;
+      left: 25px;
+    }
+    70% {
+      top: 10px;
+      left: 20px;
+    }
+    80% {
+      top: 110px;
+      left: 20px;
+    }
+    90% {
+      top: 80px;
+      left: 80px;
+    }
+    100% {
+      top: -10px;
+      left: -10px;
+    }
+  }
+}

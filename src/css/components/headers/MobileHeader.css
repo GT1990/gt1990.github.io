@@ -1,0 +1,164 @@
+header.mobile {
+  display: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0, 0.25);
+  z-index: 10;
+}
+header.mobile nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+}
+
+header.mobile nav #logo {
+  height: 50px;
+  width: auto;
+  transition: 0.3s;
+  transform: scale(1.3);
+}
+
+header.mobile nav #nav-icon {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+header.mobile nav #nav-icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 50%;
+  background: #b9b86c;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+header.mobile nav #nav-icon span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 5px 5px 0;
+}
+
+header.mobile nav #nav-icon span:nth-child(odd) {
+  left: 0px;
+  border-radius: 5px 0 0 5px;
+}
+
+header.mobile nav #nav-icon span:nth-child(1),
+header.mobile nav #nav-icon span:nth-child(2) {
+  top: 0px;
+}
+
+header.mobile nav #nav-icon span:nth-child(3),
+header.mobile nav #nav-icon span:nth-child(4) {
+  top: 10px;
+}
+
+header.mobile nav #nav-icon span:nth-child(5),
+header.mobile nav #nav-icon span:nth-child(6) {
+  top: 20px;
+}
+
+header.mobile nav #nav-icon.open span:nth-child(1),
+header.mobile nav #nav-icon.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+header.mobile nav #nav-icon.open span:nth-child(2),
+header.mobile nav #nav-icon.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+header.mobile nav #nav-icon.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+header.mobile nav #nav-icon.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+header.mobile nav #nav-icon.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+header.mobile nav #nav-icon.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+header.mobile nav #nav-icon.open span:nth-child(5) {
+  left: 5px;
+  top: 17px;
+}
+
+header.mobile nav #nav-icon.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 17px;
+}
+header.mobile #nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: calc(100vw - 50px);
+  height: 0;
+  transition: 1s;
+  overflow: hidden;
+  padding: 0 25px;
+  z-index: 10;
+}
+header.mobile #nav-links.open {
+  height: calc(100vh - 50px);
+  transition: 1s;
+  box-shadow: 0px 17px 58px -37px rgba(255, 255, 255, 0.29) inset;
+  -webkit-box-shadow: 0px 17px 58px -37px rgba(255, 255, 255, 0.29) inset;
+  -moz-box-shadow: 0px 17px 58px -37px rgba(255, 255, 255, 0.29) inset;
+}
+header.mobile #nav-links .link {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-indent: 25px;
+  margin: 10px 0;
+  color: white;
+  font-size: 1.5em;
+}
+header.mobile #nav-links .link:first-of-type {
+  margin-top: 60px;
+}

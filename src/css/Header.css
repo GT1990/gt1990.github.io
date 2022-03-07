@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+
+header {
+  display: fixed;
+  background-color: black;
+  width: calc(100vw - 200px);
+  height: 75px;
+  padding: 0 100px;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #logo {
+  height: 75px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul .link {
+  padding: 15px 15px;
+  margin: 0 20px;
+  font-size: 1em;
+  color: #fff;
+  border-bottom: 1px transparent;
+  transition: 0.3s;
+}
+nav ul .link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+nav ul .link.featured {
+  background-color: #fada5f;
+  color: #000;
+  border-radius: 25px;
+}
+nav ul .link.featured:hover {
+  background-color: #fada5f;
+  color: #000;
+}
