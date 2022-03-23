@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/gt1990.github.io/static/css/main.9349a66a.css",
-    "main.js": "/gt1990.github.io/static/js/main.4e8c3cbd.js",
-    "static/media/me3.png": "/gt1990.github.io/static/media/me3.cbfe7b1aca9106edac4e.png",
-    "static/media/HomePageMe.png": "/gt1990.github.io/static/media/HomePageMe.8abc91db89db87def0e9.png",
-    "static/media/me4.png": "/gt1990.github.io/static/media/me4.dc0e6b3902b133d3bb13.png",
-    "static/media/me1.png": "/gt1990.github.io/static/media/me1.f4d393e3956d89b0963e.png",
-    "pdf.worker.js": "/gt1990.github.io/e7e915313973ba1d49f9bb2a1998626e.js",
-    "static/media/AboutMe_new.png": "/gt1990.github.io/static/media/AboutMe_new.c4b6cae0e4df7be62a79.png",
-    "static/media/me7.png": "/gt1990.github.io/static/media/me7.3467b7bfb3337532b259.png",
-    "static/media/me2.png": "/gt1990.github.io/static/media/me2.b1dbb03944605a95ef5b.png",
-    "static/media/Resume.pdf": "/gt1990.github.io/static/media/Resume.d47bdb1d1307cede47d8.pdf",
-    "static/media/me6.png": "/gt1990.github.io/static/media/me6.fd6d7f9f38b97fb3ce16.png",
-    "static/media/me5.png": "/gt1990.github.io/static/media/me5.4699ab6db1f18a73a9cb.png",
-    "static/media/ai_logo.png": "/gt1990.github.io/static/media/ai_logo.e9c76d41bd99d26230e0.png",
-    "index.html": "/gt1990.github.io/index.html",
-    "main.9349a66a.css.map": "/gt1990.github.io/static/css/main.9349a66a.css.map",
-    "main.4e8c3cbd.js.map": "/gt1990.github.io/static/js/main.4e8c3cbd.js.map"
+    "main.css": "/static/css/main.9349a66a.css",
+    "main.js": "/static/js/main.dae0c56a.js",
+    "static/media/me3.png": "/static/media/me3.cbfe7b1aca9106edac4e.png",
+    "static/media/HomePageMe.png": "/static/media/HomePageMe.8abc91db89db87def0e9.png",
+    "static/media/me4.png": "/static/media/me4.dc0e6b3902b133d3bb13.png",
+    "static/media/me1.png": "/static/media/me1.f4d393e3956d89b0963e.png",
+    "pdf.worker.js": "/e7e915313973ba1d49f9bb2a1998626e.js",
+    "static/media/AboutMe_new.png": "/static/media/AboutMe_new.c4b6cae0e4df7be62a79.png",
+    "static/media/me7.png": "/static/media/me7.3467b7bfb3337532b259.png",
+    "static/media/me2.png": "/static/media/me2.b1dbb03944605a95ef5b.png",
+    "static/media/Resume.pdf": "/static/media/Resume.d47bdb1d1307cede47d8.pdf",
+    "static/media/me6.png": "/static/media/me6.fd6d7f9f38b97fb3ce16.png",
+    "static/media/me5.png": "/static/media/me5.4699ab6db1f18a73a9cb.png",
+    "static/media/ai_logo.png": "/static/media/ai_logo.e9c76d41bd99d26230e0.png",
+    "index.html": "/index.html",
+    "main.9349a66a.css.map": "/static/css/main.9349a66a.css.map",
+    "main.dae0c56a.js.map": "/static/js/main.dae0c56a.js.map"
   },
   "entrypoints": [
     "static/css/main.9349a66a.css",
-    "static/js/main.4e8c3cbd.js"
+    "static/js/main.dae0c56a.js"
   ]
 }
