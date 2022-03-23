@@ -4,6 +4,7 @@ const TwitterIcon = () => {
       className="socialIcon"
       href="https://twitter.com/AiGT1990"
       target="_blank"
+      rel="noreferrer"
     >
       <span>Twitter</span>
       <svg viewBox="0 0 56.693 56.693">

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../css/components/Home.css";
-import TwitterIcon from "./social/TwitterIcon";
-import GitHubIcon from "./social/GitHubIcon";
-import LinkedinIcon from "./social/LinkedinIcon";
-import TreehouseIcon from "./social/TreehouseIcon";
-import memoji from "../img/memoji_sticker.png";
+import TwitterIcon from "./icons/TwitterIcon";
+import GitHubIcon from "./icons/GitHubIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+import TreehouseIcon from "./icons/TreehouseIcon";
+import me from "../img/HomePageMe.png";
 const Home = () => {
   const sentenceRef = useRef();
 
@@ -15,7 +15,7 @@ const Home = () => {
       "React",
       "Express",
       "Node.js",
-      "REST API",
+      "GIT",
       "SQL",
       "HTML",
       "CSS",
@@ -67,7 +67,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
+    <main className="home">
       <div id="left">
         <h1 id="name">
           Ahmad
@@ -79,12 +79,12 @@ const Home = () => {
           <p ref={sentenceRef} className="typing"></p>
           <p className="typing blink">|</p>
         </div>
-        <Link to="/" className="button">
+        <Link to="/projects" className="button featured">
           View My Work
         </Link>
       </div>
       <div id="right">
-        <img src={memoji} alt="Ahmad's memoji sticker" />
+        <img src={me} alt="Ahmad's memoji sticker" />
       </div>
       <div id="social">
         <TwitterIcon />
@@ -92,15 +92,6 @@ const Home = () => {
         <GitHubIcon />
         <TreehouseIcon />
       </div>
-      <svg id="circle">
-        <circle cx="25" cy="75" r="20" />
-      </svg>
-      <svg id="circle2">
-        <circle cx="25" cy="75" r="20" />
-      </svg>{" "}
-      <svg id="circle3">
-        <circle cx="25" cy="75" r="20" />
-      </svg>
     </main>
   );
 };

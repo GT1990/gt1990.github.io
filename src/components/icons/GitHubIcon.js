@@ -1,6 +1,11 @@
 const GitHubIcon = () => {
   return (
-    <a className="socialIcon" href="https://github.com/GT1990" target="_blank">
+    <a
+      className="socialIcon"
+      href="https://github.com/GT1990"
+      target="_blank"
+      rel="noreferrer"
+    >
       <span>GitHub</span>
       <svg viewBox="0 0 512 512">
         <g>

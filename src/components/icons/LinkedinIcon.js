@@ -4,6 +4,7 @@ const LinkedinIcon = () => {
       className="socialIcon"
       href="https://www.linkedin.com/in/aigt1990/"
       target="_blank"
+      rel="noreferrer"
     >
       <span>LinkedIn</span>
       <svg viewBox="0 0 24 24">

@@ -7,7 +7,6 @@ header.mobile {
   height: 50px;
   padding: 0;
   margin: 0;
-  background-color: rgb(0, 0, 0, 0.25);
   z-index: 10;
 }
 header.mobile nav {
@@ -49,7 +48,7 @@ header.mobile nav #nav-icon span {
   position: absolute;
   height: 5px;
   width: 50%;
-  background: #b9b86c;
+  background: var(--gold-leaf);
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -131,11 +130,10 @@ header.mobile nav #nav-icon.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 17px;
 }
-header.mobile #nav-links {
+header.mobile #nav-links-wrapper {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: rgb(0, 0, 0);
   width: calc(100vw - 50px);
   height: 0;
   transition: 1s;
@@ -143,22 +141,35 @@ header.mobile #nav-links {
   padding: 0 25px;
   z-index: 10;
 }
-header.mobile #nav-links.open {
+body.dark header.mobile #nav-links-wrapper {
+  background-color: black;
+  color: white;
+}
+body.dark header.mobile #nav-links-wrapper .link {
+  color: white;
+}
+body.light header.mobile #nav-links-wrapper {
+  background-color: white;
+  color: black;
+}
+body.light header.mobile #nav-links-wrapper .link {
+  color: black;
+}
+header.mobile #nav-links-wrapper.open {
   height: calc(100vh - 50px);
   transition: 1s;
   box-shadow: 0px 17px 58px -37px rgba(255, 255, 255, 0.29) inset;
   -webkit-box-shadow: 0px 17px 58px -37px rgba(255, 255, 255, 0.29) inset;
   -moz-box-shadow: 0px 17px 58px -37px rgba(255, 255, 255, 0.29) inset;
 }
-header.mobile #nav-links .link {
+header.mobile #nav-links-wrapper .link {
   width: 100%;
   height: 50px;
   line-height: 50px;
   text-indent: 25px;
   margin: 10px 0;
-  color: white;
   font-size: 1.5em;
 }
-header.mobile #nav-links .link:first-of-type {
+header.mobile #nav-links-wrapper .link:first-of-type {
   margin-top: 60px;
 }

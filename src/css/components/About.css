@@ -1,0 +1,232 @@
+/* Desktop */
+@media only screen and (min-width: 769px) {
+  main.about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.about .top {
+    display: flex;
+    flex-direction: row;
+  }
+  main.about .left {
+    width: 55%;
+    padding: 50px 100px;
+  }
+  main.about .left p {
+    margin-bottom: 50px;
+  }
+  main.about .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+  main.about .right li {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  main.about .right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  main.about .gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main.about .gallery button {
+    width: 50px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  body.dark main.about .gallery button:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    transition: 0.3s;
+  }
+  body.light main.about .gallery button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  main.about .gallery li {
+    position: relative;
+    width: calc(25% - 50px);
+    margin: 25px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  main.about .gallery li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  body.dark main.about .gallery img {
+    -webkit-box-shadow: 0px 20px 15px -7px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 15px -7px rgba(255, 255, 255, 0.2);
+  }
+  body.light main.about .gallery img {
+    -webkit-box-shadow: 0px 20px 15px -7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 20px 15px -7px rgba(0, 0, 0, 0.3);
+  }
+
+  main.about .gallery li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  main.about .gallery li:hover > span {
+    cursor: cell;
+    height: 100%;
+    transition: 0.5s;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 769px) {
+  main.about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.about .top {
+    display: flex;
+    flex-direction: column;
+  }
+  main.about .left {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(100% - 30px);
+    padding: 15px;
+  }
+
+  main.about .right {
+    order: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main.about .right li {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  main.about .right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  main.about .gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 50px 0;
+  }
+  main.about .gallery button {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  main.about .gallery button svg {
+    width: 35px;
+    height: 35px;
+  }
+  body.dark main.about .gallery button:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    transition: 0.3s;
+  }
+  body.light main.about .gallery button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  main.about .gallery li {
+    position: relative;
+    width: calc(100% - 50px);
+    margin: 25px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+  }
+  main.about .gallery li:first-of-type {
+    display: block;
+  }
+  main.about .gallery li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  body.dark main.about .gallery img {
+    -webkit-box-shadow: 0px 20px 15px -7px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 15px -7px rgba(255, 255, 255, 0.2);
+  }
+  body.light main.about .gallery img {
+    -webkit-box-shadow: 0px 20px 15px -7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 20px 15px -7px rgba(0, 0, 0, 0.3);
+  }
+
+  main.about .gallery li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  main.about .gallery li:hover > span {
+    cursor: cell;
+    animation-name: dropdown;
+    animation-duration: 5s;
+  }
+  @keyframes dropdown {
+    0% {
+      height: 0px;
+    }
+    20% {
+      height: 100%;
+    }
+    80% {
+      height: 100%;
+    }
+    100% {
+      height: 0px;
+    }
+  }
+}

@@ -4,6 +4,7 @@ const TreehouseIcon = () => {
       className="socialIcon"
       href="https://teamtreehouse.com/ahmadibrahim"
       target="_blank"
+      rel="noreferrer"
     >
       <span>TreeHouse</span>
       <svg viewBox="0 0 24 24">

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../img/Ai_logo_new.png";
+import logo from "../../img/ai_logo.png";
+import ThemeIcon from "../icons/ThemeIcon";
 
 import "../../css/components/headers/MobileHeader.css";
 const MobileHeader = () => {
@@ -38,7 +39,7 @@ const MobileHeader = () => {
           <span></span>
         </div>
       </nav>
-      <div ref={navLinksRef} id="nav-links">
+      <div ref={navLinksRef} id="nav-links-wrapper">
         <Link to="/" className="link">
           Home
         </Link>
@@ -48,9 +49,13 @@ const MobileHeader = () => {
         <Link to="/contact" className="link">
           Contact
         </Link>
-        <Link to="/portfolio" className="link">
-          Portfolio
+        <Link to="/resume" className="link">
+          Resume
         </Link>
+        <Link to="/projects" className="link">
+          Projects
+        </Link>
+        <ThemeIcon display="desktop" />
       </div>
     </header>
   );
