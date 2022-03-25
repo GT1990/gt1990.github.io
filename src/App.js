@@ -1,4 +1,4 @@
-import { HashRouter, Routes } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/headers/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import ProjectDetails from "./components/ProjectDetails";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Portfolio />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </HashRouter>
