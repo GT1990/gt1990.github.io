@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../Context";
-import resumeLink from "../Resume2022.pdf";
+import resumeLink from "../Resume.pdf";
 import "../css/components/Resume.css";
 import { Link } from "react-router-dom";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
