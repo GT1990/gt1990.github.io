@@ -19,14 +19,15 @@ const Resume = () => {
   return (
     <main className="resume">
       <h1>My Resume</h1>
-      <Link
+      <a
         className="button featured"
-        to={resumeLink}
-        download="Ahmad Ibrahim's Resume"
+        href={resumeLink}
+        download="Resume_Ahmad_Ibrahim.pdf"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Download Resume
-      </Link>
+      </a>
       {/* <img src={resumeImg} alt="Ahmad's Resume" /> */}
       <Document file={resumeLink}>
         <Page size="A4" id="page" pageNumber={1} width={pdfWidth} />
